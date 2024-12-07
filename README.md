@@ -10,3 +10,6 @@ This repository contains my assessment submission for the module Computer Infras
 
 -CRON expression and editor interpreter: 
 https://crontab.guru/
+
+- Check the validation of syntax in YAML
+https://www.yamllint.com/
