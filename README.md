@@ -1,4 +1,6 @@
-# My assessment repository
+# Computer Infrastructure 
+
+## This repository is about:
 
 **by Noemi Diaz**
 
