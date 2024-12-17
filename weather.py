@@ -1,4 +1,4 @@
-#! user/bin/env python
+#!/usr/bin/env python
 
 # Financial data
 import yfinance as yf

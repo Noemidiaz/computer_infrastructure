@@ -3,7 +3,7 @@ name: Weather Data Workflow
 
 on:
   schedule:
-    - cron: '0 8 * * *' # Runs daily at 10 AM UTC
+    - cron: '0 8 * * *' # Runs daily at 8 AM UTC
   workflow_dispatch: # Allows manual triggering
 
 jobs:
@@ -14,8 +14,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Fetch Weather Data
+      - name: Install Dependencies
         run: |
-          echo "Fetching weather data..."
-          # Replace with actual script logic
-          python your_script.py
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      
+      - name: Run weather.sh script
+        run: |
+          chmod +x weather.sh  # Make it executable
+          ./weather.sh         # Run the script
+
+      - name: Run weather.py
+        run: python weather.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "github-actions@github.com"
+          git add weather_data.txt
+          git commit -m "Automated weather data update" || echo "No changes to commit"
+          git push
