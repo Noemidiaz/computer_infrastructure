@@ -25,9 +25,6 @@ jobs:
           chmod +x weather.sh  # Make it executable
           ./weather.sh         # Run the script
 
-      - name: Run weather.py
-        run: python weather.py
-
       - name: Commit and Push Changes
         run: |
           git config --local user.name "github-actions"
