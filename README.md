@@ -18,3 +18,6 @@ https://www.yamllint.com/
 
 - Workflow syntax for GitHub Actions:
 https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions
+
+- Events that triggers workflows:
+https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows
