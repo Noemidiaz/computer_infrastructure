@@ -25,7 +25,8 @@ jobs:
           chmod +x weather.sh  # Make it executable
           ./weather.sh         # Run the script
 
-      -name: Commit and Push Changes
+
+      - name: Commit and Push Changes
         env:
           PAT: ${{ secrets.PAT }}  # Access the PAT secret
         run: |
@@ -33,5 +34,5 @@ jobs:
           git config --local user.email "github-actions@github.com"
           git add weather_data.txt
           git commit -m "Automated weather data update" || echo "No changes to commit"
-          git push https://github-actions:${PAT}@github.com/<YOUR_USERNAME>/<YOUR_REPO>.git   
+          git push https://github-actions:${PAT}@github.com/<noemidiaz>/<computer_infrastructure>.git   
           
