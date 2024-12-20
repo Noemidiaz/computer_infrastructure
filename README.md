@@ -9,21 +9,23 @@ This repository contains my assessment submission for the module Computer Infras
 
 This proyect helps to practice automating weather data and collection. All is document in a Jupyter Notebook, ***weather.ipnyb*** explaining with details several steps and codes to achieve some tasks.
 
-We use  ***CodeSpace*** on github to organized the files into  folders, gather weather data and use timestamps. Also, download weather information using ***bash scripts*** and tools like ***wget***.
+We use  ***GitHub CodeSpaces*** on github to organized the files into  folders, gather weather data and use timestamps. Also, download weather information using ***bash scripts*** and tools like ***wget***.
 
-Finally, to create a script (***weather.sh***) that runs automatically every day to download new weather data and save it.Using ***GitHub Actions***, you’ll automate the running of your script, automatically updating your repository with the latest weather data each day
+Finally, to create a script (***weather.sh***) that runs automatically every day to download new weather data and save it.Using ***GitHub Actions*** ensures the script is automatically updating in the repository with the latest weather data each day at 8:00 am.
 
 
 
 ## Get Help
 Below are some references from official websites that contribute to my work. These resources complement and expand upon the knowledge require for this task.
 
+
 ## Contribute
 You can submit a pull request regarding my code if you discover an error or if It should be updated.
 
+
 ## Author
-I am Noemi Diaz and I am currently studying Science in Computing in Data Analytics at ATU
-Author
+I am Noemi Diaz and I am currently studying Science in Computing in Data Analytics at ![ATU](https://www.atu.ie/)
+
 
 
 ### References
